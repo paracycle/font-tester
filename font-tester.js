@@ -41,7 +41,7 @@
   }
 
 
-  load('https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', function($) {
+  load('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function($) {
     function removeCurrentLink() {
       $("link[rel='stylesheet'][href^='" + FONT_URL_PREFIX + "']", $head).remove();
     }
@@ -68,7 +68,7 @@
                     .attr('id', 'font-tester-selector')
                     .change(selectorChange);
     var $toolbar = $('<div/>')
-                    .attr('id=', 'font-tester-toolbar')
+                    .attr('id', 'font-tester-toolbar')
                     .append($selector);
 
     $head.append("<style>#font-tester-toolbar { border-bottom: 1px solid #aaa; position: fixed; top: 0; width: 100%; height: 25px; z-index: 10000; text-align: left; background: gainsboro; }</style>");
