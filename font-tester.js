@@ -41,7 +41,7 @@
   }
 
 
-  load('https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js', function($) {
+  load('https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js', function($) {
     function removeCurrentLink() {
       $("link[rel='stylesheet'][href^='" + FONT_URL_PREFIX + "']", $head).remove();
     }
