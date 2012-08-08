@@ -69,9 +69,32 @@
                     .change(selectorChange);
     var $toolbar = $('<div/>')
                     .attr('id', 'font-tester-toolbar')
+                    .append($('<label>')
+                      .attr('id', 'font-tester-label')
+                      .text('Select a font:')
+                    )
                     .append($selector);
 
-    $head.append("<style>#font-tester-toolbar { border-bottom: 1px solid #aaa; position: fixed; top: 0; width: 100%; height: 25px; z-index: 10000; text-align: left; background: gainsboro; }</style>");
+    $head.append("<style>" +
+      "#font-tester-toolbar { " +
+      "  border-bottom: 1px solid #aaa; " +
+      "  position: fixed; " +
+      "  top: 0; " +
+      "  width: 100%; " +
+      "  height: 25px; " + 
+      "  z-index: 10000; " +
+      "  text-align: left; " + 
+      "  background: gainsboro; " +
+      "}" +
+      "#font-tester-label {" +
+      "  font-weight: bold; " +
+      "  font-size: 1.1em; " +
+      "}" +
+      "#font-tester-selector {" +
+      "  margin-top: 5px; " +
+      "  font-size: 1.1em; " +
+      "}" +
+      "</style>");
 
     $body.append($toolbar);
 
