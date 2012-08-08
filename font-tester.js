@@ -77,6 +77,7 @@
 
     $head.append("<style>" +
       "#font-tester-toolbar { " +
+      "  font-family: Helvetica, Arial, sans !important;" +
       "  border-bottom: 1px solid #aaa; " +
       "  position: fixed; " +
       "  top: 0; " +
